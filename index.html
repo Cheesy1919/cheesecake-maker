@@ -22,6 +22,45 @@
     form button:hover { background-color: #c96e53; }
   </style>
 </head>
+  <!-- Existing content... -->
+
+<!-- 🧁 Add the gallery here -->
+<section id="gallery">
+  <h2>Cheesecake Gallery</h2>
+  <div class="gallery">
+    <img src="images/20250505_123551.jpg" alt="Slice of cheesecake">
+    <img src="images/20250505_123737.jpg" alt="Whole cheesecake">
+    <img src="images/20250602_082925.jpg" alt="Layered cheesecake">
+    <img src="images/20250602_083748.jpg" alt="Layered cheesecake slice">
+    <img src="images/20250709_064237.png" alt="Chocolate swirl cheesecake">
+    <img src="images/20250504_122811.jpg" alt="Classic cheesecake">
+  </div>
+</section>
+
+<style>
+  #gallery {
+    padding: 2rem;
+    background-color: #fffaf4;
+  }
+  #gallery h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+</style>
+
+</body>
+</html>
+
 <body>
 
 <header>
