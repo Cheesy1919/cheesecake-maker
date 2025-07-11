@@ -1,210 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    background-color: #fffaf6;
-    color: #333;
-  }
-
-  header, footer {
-    background-color: #f8d5c4;
-    padding: 20px;
-    text-align: center;
-  }
-
-  nav {
-    display: flex;
-    justify-content: center;
-    background-color: #d9896b;
-  }
-
-  nav a {
-    padding: 14px 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  nav a:hover {
-    background-color: #c96e53;
-  }
-
-  .hero {
-    background-color: #f1e5d0;
-    padding: 40px;
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 2.5em;
-  }
-
-  .content {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-  }
-
-  .btn {
-    background-color: #d9896b;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-  }
-
-  .fb-btn {
-    background-color: #4267B2;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .gallery img {
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
-  }
-
-  form input,
-  form textarea,
-  form select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  form button {
-    background-color: #d9896b;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  form button:hover {
-    background-color: #c96e53;
-  }
-</style>
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heavenly Cheesecakes</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #fffaf6; color: #333; }
+    header, footer { background-color: #f8d5c4; padding: 20px; text-align: center; }
+    nav { display: flex; justify-content: center; background-color: #d9896b; }
+    nav a { padding: 14px 20px; color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { background-color: #c96e53; }
+    .hero { background-color: #f1e5d0; padding: 40px; text-align: center; }
+    .hero h1 { font-size: 2.5em; }
+    .content { padding: 20px; max-width: 900px; margin: auto; }
+    .btn { background-color: #d9896b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
+    .fb-btn { background-color: #4267B2; color: white; padding: 10px 15px; border-radius: 4px; text-decoration: none; font-weight: bold; }
+  </style>
 </head>
-  <!-- Existing content... -->
 
-
-  
-  <body>
-
-  
-  <a href="index.html" style="display: inline-flex; align-items: center; text-decoration: none; margin-bottom: 20px; font-size: 18px;">
-    <span style="font-size: 24px; margin-right: 8px;">&#8592;</span> Back to Home
-  </a>
-
-  
+<body>
   <header>
     <h1>Heavenly Cheesecakes</h1>
   </header>
 
+  <nav>
+    <a href="#home">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Bite into Bliss</h1>
+    <p>Homemade Cheesecakes with Love & Local Flavor</p>
+    <a href="https://www.facebook.com/louis.stamant.75" target="_blank" class="fb-btn">Visit us on Facebook</a>
+  </section>
+
   <div class="content">
-
-    
-  
-  </div>
-</body>
-</html>
-
-
-
-<header>
-  <h1>Heavenly Cheesecakes</h1>
-</header>
-
-<nav>
-  <a href="#home">Home</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#order">Order</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section class="hero" id="home">
-  <h1>Bite into Bliss</h1>
-  <p>Homemade Cheesecakes with Love & Local Flavor</p>
-  <a href="https://www.facebook.com/louis.stamant.75" target="_blank" class="fb-btn">Visit us on Facebook</a>
-</section>
-
-<div class="content" id="gallery">
-  <h2>Cheesecake Gallery</h2>
-  
-  <div class="gallery">
-<img src="images/20250505_123551.jpg" alt="Slice of cheesecake">
-  <img src="images/20250505_123737.jpg" alt="Whole cheesecake">
-  <img src="images/20250602_082925.jpg" alt="Layered cheesecake">
-  <img src="images/20250602_083748.jpg" alt="Layered cheesecake slice">
-  <img src="images/20250709_064237.png" alt="Chocolate swirl cheesecake">
-  <img src="images/20250504_122811.jpg" alt="Classic cheesecake">
+    <!-- Additional homepage content can go here -->
   </div>
 
-
-<div class="content" id="order">
-  <h2>Order Now</h2>
-  <form>
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required />
-
-    <label for="email">Your Email:</label>
-    <input type="email" id="email" name="email" required />
-
-    <label for="cake">Cheesecake Choice:</label>
-    <select id="cake" name="cake">
-      <option value="strawberry_swirl">Strawberry Swirl</option>
-      <option value="classic">Classic Vanilla</option>
-      <option value="chocolate">Chocolate Marble</option>
-    </select>
-
-    <label for="message">Custom Message:</label>
-    <textarea id="message" name="message" rows="4"></textarea>
-
-    <button type="submit">Submit Order</button>
-  </form>
-</div>
-
-<div class="content">
-  <h2>Download Recipe</h2>
-  <p>Get the recipe for our Strawberry Swirl Cheesecake in PDF format:</p>
-  <a href="strawberry_swirl_recipe.pdf" download class="btn">Download PDF</a>
-</div>
-
-
-<div class="content">
- <h2>Download Recipe</h2>
- <p>Get the recipe for our Strawberry Swirl Cheesecake in PDF format:</p>
- <a class="btn" href="strawberry_swirl_recipe.pdf" download>Download PDF</a>
-</div>
-
-<div class="content" id="contact">
-  <h2>Contact</h2>
-  <p>Email: heavenlycheesecakes@example.com</p>
-  <p>Facebook: <a href="https://www.facebook.com/louis.stamant.75" target="_blank">Louis St Amant</a></p>
-</div>
-
-<footer>
-  <p>&copy; 2025 Heavenly Cheesecakes</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Heavenly Cheesecakes</p>
+  </footer>
 </body>
 </html>
