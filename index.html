@@ -23,45 +23,26 @@
   </style>
 </head>
   <!-- Existing content... -->
+<body>
+  <header>
+    <h1>Heavenly Cheesecakes</h1>
+  </header>
 
-<!-- 🧁 Add the gallery here -->
-<section id="gallery">
-  <h2>Cheesecake Gallery</h2>
-  <div class="gallery">
-    <img src="images/20250505_123551.jpg" alt="Slice of cheesecake">
-    <img src="images/20250505_123737.jpg" alt="Whole cheesecake">
-    <img src="images/20250602_082925.jpg" alt="Layered cheesecake">
-    <img src="images/20250602_083748.jpg" alt="Layered cheesecake slice">
-    <img src="images/20250709_064237.png" alt="Chocolate swirl cheesecake">
-    <img src="images/20250504_122811.jpg" alt="Classic cheesecake">
+  <div class="content">
+    <h2>Cheesecake Gallery</h2>
+    <div class="grid gallery">
+      <img src="images/20250505_123551.jpg" alt="Slice of cheesecake" />
+      <img src="images/20250505_123737.jpg" alt="Whole cheesecake" />
+      <img src="images/20250602_082925.jpg" alt="Layered cheesecake" />
+      <img src="images/20250602_083748.jpg" alt="Layered cheesecake slice" />
+      <img src="images/20250709_064237.png" alt="Chocolate swirl cheesecake" />
+      <img src="images/20250504_122811.jpg" alt="Classic cheesecake" />
+    </div>
   </div>
-</section>
-
-<style>
-  #gallery {
-    padding: 2rem;
-    background-color: #fffaf4;
-  }
-  #gallery h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-  }
-  .gallery img {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-</style>
-
 </body>
 </html>
 
-<body>
+
 
 <header>
   <h1>Heavenly Cheesecakes</h1>
@@ -82,13 +63,16 @@
 
 <div class="content" id="gallery">
   <h2>Cheesecake Gallery</h2>
-  <p>Coming soon! A showcase of our finest creations.</p>
-  <div class="grid gallery">
-    <img src="https://via.placeholder.com/200x150?text=Cheesecake+1" />
-    <img src="https://via.placeholder.com/200x150?text=Cheesecake+2" />
-    <img src="https://via.placeholder.com/200x150?text=Cheesecake+3" />
+  
+  <div class="gallery">
+<img src="images/20250505_123551.jpg" alt="Slice of cheesecake">
+  <img src="images/20250505_123737.jpg" alt="Whole cheesecake">
+  <img src="images/20250602_082925.jpg" alt="Layered cheesecake">
+  <img src="images/20250602_083748.jpg" alt="Layered cheesecake slice">
+  <img src="images/20250709_064237.png" alt="Chocolate swirl cheesecake">
+  <img src="images/20250504_122811.jpg" alt="Classic cheesecake">
   </div>
-</div>
+
 
 <div class="content" id="order">
   <h2>Order Now</h2>
@@ -116,7 +100,14 @@
 <div class="content">
   <h2>Download Recipe</h2>
   <p>Get the recipe for our Strawberry Swirl Cheesecake in PDF format:</p>
-  <a class="btn" href="strawberry_swirl_recipe.pdf" download>Download PDF</a>
+  <a href="strawberry_swirl_recipe.pdf" download class="btn">Download PDF</a>
+</div>
+
+
+<div class="content">
+ <h2>Download Recipe</h2>
+ <p>Get the recipe for our Strawberry Swirl Cheesecake in PDF format:</p>
+ <a class="btn" href="strawberry_swirl_recipe.pdf" download>Download PDF</a>
 </div>
 
 <div class="content" id="contact">
