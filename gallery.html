@@ -3,39 +3,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cheesecake Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heavenly Cheesecakes - Gallery</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #fffaf4;
-      margin: 2rem;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fffaf6;
+      color: #333;
     }
-    h1 {
+
+    header, footer {
+      background-color: #f8d5c4;
+      padding: 20px;
       text-align: center;
-      margin-bottom: 1rem;
     }
-    .gallery {
+
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      padding: 20px;
     }
+
     .gallery img {
       width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    a.back-link {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 20px;
+      color: #d9896b;
+      font-weight: bold;
+    }
+
+    a.back-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Cheesecake Gallery</h1>
-  <div class="gallery">
-    <img src="images/20250505_123551.jpg" alt="Slice of cheesecake">
-    <img src="images/20250505_123737.jpg" alt="Whole cheesecake">
-    <img src="images/20250602_082925.jpg" alt="Layered cheesecake">
-    <img src="images/20250602_083748.jpg" alt="Layered cheesecake slice">
-    <img src="images/20250709_064237.png" alt="Chocolate swirl cheesecake">
-    <img src="images/20250504_122811.jpg" alt="Classic cheesecake">
+  <a href="index.html" class="back-link">
+    <span style="font-size: 24px; margin-right: 8px;">&#8592;</span> Back to Home
+  </a>
+
+  <header>
+    <h1>Heavenly Cheesecakes</h1>
+  </header>
+
+  <div class="content">
+    <h2 style="text-align:center;">Cheesecake Gallery</h2>
+    <div class="grid gallery">
+      <img src="images/20250505_123551.jpg" alt="Slice of cheesecake" />
+      <img src="images/20250505_123737.jpg" alt="Whole cheesecake" />
+      <img src="images/20250602_082925.jpg" alt="Layered cheesecake" />
+      <img src="images/20250602_083748.jpg" alt="Layered cheesecake slice" />
+      <img src="images/20250709_064237.png" alt="Chocolate swirl cheesecake" />
+      <img src="images/20250504_122811.jpg" alt="Classic cheesecake" />
+    </div>
   </div>
 </body>
 </html>
